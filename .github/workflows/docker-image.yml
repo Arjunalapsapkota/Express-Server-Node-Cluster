@@ -25,6 +25,8 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
-          push: true
-          tags: user/app:latest
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        push: true
+        tags: arjunalapsapkota/webapp:latest
      
