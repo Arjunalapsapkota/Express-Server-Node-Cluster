@@ -26,5 +26,5 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: arjunalapsapkota/webapp:latest, arjunalapsapkota/webapp:${{env.GITHUB_RUN_NUMBER}}
+        tags: arjunalapsapkota/webapp:latest
      
